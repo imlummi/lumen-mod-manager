@@ -1,0 +1,58 @@
+<!-- src/pages/update-manager.html -->
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <title>Mod Updates - Lumen</title>
+    <link rel="stylesheet" href="../styles.css">
+</head>
+<body>
+    <div class="update-manager-container">
+        <header class="update-header">
+            <h1>Mod Updates</h1>
+            <div class="update-stats">
+                <span id="update-count" class="update-badge hidden">0 updates available</span>
+            </div>
+            <button id="close-btn" class="btn-close">×</button>
+        </header>
+
+        <div class="update-controls">
+            <button id="refresh-btn" class="btn secondary">
+                <span class="btn-icon">🔄</span>
+                Refresh
+            </button>
+            <button id="update-selected-btn" class="btn primary" disabled>
+                Update Selected (0)
+            </button>
+            <button id="update-all-btn" class="btn primary" disabled>
+                Update All
+            </button>
+        </div>
+
+        <div id="loading-state" class="loading-state hidden">
+            <div class="spinner"></div>
+            <span id="loading-text">Checking for updates...</span>
+        </div>
+
+        <div id="mod-list" class="mod-list">
+            <!-- Mods will be populated here -->
+        </div>
+
+        <div id="progress-section" class="progress-section hidden">
+            <h3>Update Progress</h3>
+            <div class="progress-item">
+                <div class="progress-info">
+                    <span id="current-mod">Updating...</span>
+                    <span id="progress-count">1 / 5</span>
+                </div>
+                <div class="progress-bar">
+                    <div id="progress-fill" class="progress-fill"></div>
+                </div>
+                <div class="progress-percentage">0%</div>
+            </div>
+        </div>
+    </div>
+
+    <script src="update-manager.js"></script>
+</body>
+</html>

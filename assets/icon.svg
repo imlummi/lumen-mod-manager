@@ -1,0 +1,24 @@
+<!-- assets/icon.svg -->
+<svg width="256" height="256" viewBox="0 0 256 256" xmlns="http://www.w3.org/2000/svg">
+  <!-- Background circle -->
+  <circle cx="128" cy="128" r="120" fill="#7FDBFF" opacity="0.2"/>
+  
+  <!-- Light rays -->
+  <g stroke="#2196F3" stroke-width="8" stroke-linecap="round">
+    <line x1="128" y1="40" x2="128" y2="60"/>
+    <line x1="188" y1="68" x2="175" y2="81"/>
+    <line x1="216" y1="128" x2="196" y2="128"/>
+    <line x1="188" y1="188" x2="175" y2="175"/>
+    <line x1="128" y1="216" x2="128" y2="196"/>
+    <line x1="68" y1="188" x2="81" y2="175"/>
+    <line x1="40" y1="128" x2="60" y2="128"/>
+    <line x1="68" y1="68" x2="81" y2="81"/>
+  </g>
+  
+  <!-- Light bulb -->
+  <circle cx="128" cy="128" r="50" fill="#7FDBFF" stroke="#2196F3" stroke-width="6"/>
+  
+  <!-- Bulb base -->
+  <rect x="108" y="168" width="40" height="20" rx="8" fill="#2196F3"/>
+  <rect x="110" y="192" width="36" height="6" rx="3" fill="#2196F3"/>
+</svg>
